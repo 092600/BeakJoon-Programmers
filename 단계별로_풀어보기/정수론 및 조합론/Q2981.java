@@ -28,6 +28,41 @@ import java.util.Arrays;
 
 public class Q2981 {
     public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        int n = Integer.parseInt(br.readLine());
+        int[] inputList = new int[n];
+        int[] tmpList = new int[n-1];
+
+        for (int i=0;i<n;i++){
+            inputList[i] = Integer.parseInt(br.readLine());
+        }
+
+        Arrays.sort(inputList);
+
+        int gcd = inputList[1] - inputList[0];
+
+        for (int i=2;i<n;i++){
+            gcd = getGcd(gcd, inputList[i] - inputList[i-1]);
+        }
+
+        for(int i = 2; i <= gcd; i++) {
+
+            // i가 최대공약수의 약수라면 출력
+            if(gcd % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+
+    }
+
+    static int getGcd(int a, int b){
+        while (b!=0){
+            int r = a%b;
+            a = b;
+            b = r;
+        }
+        return a;
     }
 }

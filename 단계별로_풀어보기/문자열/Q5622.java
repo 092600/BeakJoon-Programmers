@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q10809 {
+public class Q5622 {
     public static void main(String[] args) throws Exception {
         Scanner stdIn = new Scanner(System.in);
         String in = stdIn.nextLine().toUpperCase();

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q1152{
+public class Q2908{
     public static void main(String[] args){
         Scanner stdIn = new Scanner(System.in);
         int a = stdIn.nextInt();

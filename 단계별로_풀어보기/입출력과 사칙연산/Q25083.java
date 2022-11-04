@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q10171 {
+public class Q25083 {
     public static void main(String[] args){
         System.out.println("         ,r'\"7");
         System.out.println("r`-_   ,'  ,/");

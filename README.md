@@ -117,3 +117,17 @@
 - [어린 왕자](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%ED%95%981/Q1004.java)
 
 ---
+
+#### 정수론 및 조합론
+- [배수와 약수](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q5086.java)
+- [약수](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q1037.java)
+- [최대공약수와 최소공배수](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q2609.java)
+- [최소공배수](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q1934.java)
+- [검문](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q2981.java) 
+- [링](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q3036.java)
+- [이항 계수1](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q11050.java)
+- [이항 계수2](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q11051.java)
+- [다리 놓기](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q1010.java)
+- [패션왕 신해빈](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q9375.java)
+- [팩토리얼 0의 개수](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q1676.java)
+- [조합 0의 개수](https://github.com/092600/BaekJoon/tree/master/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EC%A0%95%EC%88%98%EB%A1%A0%20%EB%B0%8F%20%EC%A1%B0%ED%95%A9%EB%A1%A0/Q2004.java) 

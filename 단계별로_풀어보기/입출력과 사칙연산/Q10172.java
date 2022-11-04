@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q10171 {
+public class Q10172 {
     public static void main(String[] args){
         System.out.println("|\\_/|");
         System.out.println("|q p|   /}");
