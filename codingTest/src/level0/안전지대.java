@@ -6,45 +6,47 @@ import java.util.stream.Collectors;
 public class 안전지대 {
 
     public static void main(String[] args) {
-        int[][] board = {{1, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}};
+        // int[][] board = {{1, 0, 0, 0, 1}, {0, 0, 1, 1, 1}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 1}, {0, 0, 0, 0, 0}};
+        // int[][] board = {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 1, 1, 0}, {0, 0, 0, 0, 0}};
+        // int[][] board = {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}};
+        // int[][] board = {{0}};
+        // int[][] board = {{0, 0}, {0,0}};
+        int[][] board = {{1, 0, 0}, {0,0,0},{0,0,1}};
         
-        solution(board);
+        System.out.println(solution(board));
     }
 
     public static int solution(int[][] board) {
-        boolean[][] dangerArea = new boolean[5][5];
+        int n = board.length; int answer = 0;
+        boolean[][] dangerArea = new boolean[n][n];
         
-        
-        for (int i=0;i<5;i++) {
-            for (int j=0;j<5;j++) {
-
+        for (int i=0;i<n;i++) {
+            for (int j=0;j<n;j++) {
                 if (board[i][j] == 1) {
                     
-                    int I = (i == 4) || (i == 0) ? i : i-1;
-                    int J = (j == 4) || (j == 0) ? j : j-1;
+                    int I = (i == 0) ?  Integer.valueOf(i) : Integer.valueOf(i-1);
+                    int J = (j == 0) ?  Integer.valueOf(j) : Integer.valueOf(j-1);
+
+                    int endI = (i == n-1) ? i : i+1;
+                    int endJ = (j == n-1) ? j : j+1;
                     
-                    // System.out.println(I +", "+J);
-                    for ( ;I <= i + 1; I++) {
-                        for ( ;J <= j + 1; J++) {
-                            System.out.println(I +", "+J);
-                            
-                        }
-                    }
-                    
+                    for (int y = I ;y <= endI; y++) {
+                        for (int x = J ;x <= endJ; x++) {
+                            dangerArea[y][x] = true;
+                        }   
+                    }            
                 }
             }
         }
+        
         for (var k : dangerArea) {
             for (var l : k) {
-                System.out.print(l + " ");
+                if (l == false) {
+                    answer += 1;
+                }
             }
-            System.out.println();
         }
-
-        return 3;
+        
+        return answer;
     }
-
-    // public static int countShelter(int xIdx, int yIdx) {
-       
-    // }
 }
