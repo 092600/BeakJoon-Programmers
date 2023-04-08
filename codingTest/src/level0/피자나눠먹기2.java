@@ -13,10 +13,7 @@ public class 피자나눠먹기2 {
     public static int solution(int n) {
         int cnt = 1;
         while (true) {
-            System.out.println(6 +", "+ cnt);
             if ((6 * cnt) % n == 0) {
-                // cnt++;
-                // System.out.println((n * cnt));
                 break;
             }
 

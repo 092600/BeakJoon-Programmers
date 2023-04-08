@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class 퍙행 {
+public class 평행 {
 
     public static void main(String[] args) {
         // int[][] dots = {{1,4}, {9,2}, {3,8}, {11,6}};
