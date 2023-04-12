@@ -1,6 +1,10 @@
 package level1;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 public class 실패율 {
@@ -20,47 +24,47 @@ public class 실패율 {
     
     
     public static int[] solution(int N, int[] stages) {
-        Map<Integer, Integer> success = new HashMap<Integer, Integer>();
-        Map<Integer, Integer> tryPeo = new HashMap<Integer, Integer>();
-        Map<Integer, Double> answerDict = new HashMap<Integer, Double>();
-        int[] answer = new int[N];
+        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+        Map<Integer,Double> map2 = new HashMap<Integer,Double>();
+        List<Double> arr = new ArrayList<Double>();
 
-        for (int i=0;i<stages.length;i++) {
-            System.out.print(stages[i] + " | ");
-            for (int j=1;j<=stages[i];j++) {
-                if (j != N+1)            
-                // System.out.print(j + ", ");
-                tryPeo.put(j, tryPeo.getOrDefault(j, 0) + 1);
-            }
-            for (int j=1;j<stages[i];j++) {
-
-                success.put(j, success.getOrDefault(j, 0) + 1);
-                System.out.print(j + ", ");
-            }
-            
-            // System.out.println();
+        for (int i=0;i<=N;i++) {
+            map.put(i, 0);
         }
 
-        System.out.println(tryPeo);
-        System.out.println(success);
-        
-        for (int round : tryPeo.keySet()) {
-            // System.out.println(success.get(round) / tryPeo.get(round));
-            // System.out.println((double) 1 - (success.get(round).intValue() / (double) tryPeo.get(round).intValue()));
-            answerDict.put(round, (double) 1 - (success.get(round) / (double) tryPeo.get(round)));
+        for (int stage : stages) {
+            for (int i=0;i<stage;i++) {
+                map.put(i,map.getOrDefault(i, 0)+1);
+            }
+        }
+
+        for (int i=1;i<=N;i++) {
+            map2.put(i, (double) map.get(i) / map.get(i-1));
+        }
+    
+        Iterator<Double> iter = map2.values().iterator();
+        while(iter.hasNext()) {
+            arr.add(iter.next());
+        }
+
+        Collections.sort(arr);
+
+        int[] answer = new int[arr.size()];
+        for (int i=0;i<arr.size();i++) {
+            for (Integer key : map2.keySet()) {
+                if (map2.get(key) == arr.get(i)) {
+                    answer[i] = key;
+                }
+            }
         }
         
-        
-        
-        
-
-        System.out.println(answerDict);
-        
-        // for (int i=0;i<answer.length;i++) {
-        //     for (int i=0;i<answer.length;i++) {
-        // }
-
-        return stages;
+        return answer;
     }
     
 }
+
+// for (int stage : stages) {
+        //     for (int i=1;i<stage;i++) {
+        //         map2.put(i, (double) map.get(i) / map.get(i-1));
+        //     }    
+        // }
